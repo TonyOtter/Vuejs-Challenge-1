@@ -1,0 +1,75 @@
+
+/* PAGE WRAPPER */
+.wrapper {
+   padding: 10px;
+   >.actions {
+      margin-top: 20px;
+      width: 50%;
+      input {
+         width: 200px;
+      }
+   }
+}
+
+/* CARDS LIST */
+.boards-area {
+   margin-top: 30px;
+   >span {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+   }
+   .board {
+      border: 1px solid $darkGrey;
+      background-color: $grey;
+      width: 30%;
+      border-radius: 4px;
+      padding: 20px;
+      h2 {
+         text-decoration: underline;
+         text-align: center;
+      }
+   }
+   .board:not(Nlast-child) {
+      margin-right: 10px;
+   }
+}
+
+/* CARDS */
+.cards-area {
+   >span {
+      display: block;
+      padding: 10px;
+      .card-item {
+         background-color: $white;
+         border: 1px solid $darkGrey;
+         border-radius: 2px;
+         padding: 5px;
+         margin: 10px 0;
+         cursor: move;
+         img {
+            width: 20px;
+            height: auto;
+            cursor: pointer;
+            float: right;
+         }
+      }
+   }
+}
+
+/* EVENT ACTIONS */
+.actions {
+   background-color: $lightGrey;
+   border-radius: 4px;
+   padding: 10px;
+   .group {
+      display: block;
+      margin-top: 10px;
+      button:not(:last-child) {
+         margin-right: 10px;
+      }
+      input {
+         margin-right: 10px;
+      }
+   }
+}
